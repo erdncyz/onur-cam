@@ -79,4 +79,9 @@ if (heroImages.length > 1) {
     heroIndex = (heroIndex + 1) % heroImages.length;
     heroImages[heroIndex].classList.add('active');
   }, 5000);
-} 
+}
+
+// Sayfa açıldığında en üste kaydır
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+}); 
