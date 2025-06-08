@@ -4,156 +4,284 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onur Yılmazlar Cam San. Ltd. Şti.</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <a href="#" class="logo-link" style="display: flex; align-items: center; gap: 16px; text-decoration: none;">
-        <span class="logo-svg" aria-label="Logo">
-          <svg width="54" height="54" viewBox="0 0 54 54" fill="none">
-            <rect x="6" y="6" width="42" height="42" rx="8" fill="#1a355e" stroke="#d4af37" stroke-width="3"/>
-            <rect x="15" y="15" width="12" height="24" rx="2" fill="#fff" stroke="#d4af37" stroke-width="2"/>
-            <rect x="27" y="15" width="12" height="24" rx="2" fill="#fff" stroke="#d4af37" stroke-width="2"/>
+      <a href="#" class="logo-link">
+        <span class="logo-svg">
+          <svg width="40" height="40" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="32" height="32" rx="6" stroke="#ffd700" stroke-width="3.2" fill="rgba(255,255,255,0.08)"/>
+            <rect x="10" y="10" width="8" height="18" rx="2.5" fill="#fff"/>
+            <rect x="20" y="10" width="8" height="18" rx="2.5" fill="#fff"/>
+            <rect x="10" y="10" width="18" height="8" rx="2.5" fill="rgba(255,255,255,0.13)"/>
           </svg>
         </span>
-        <span class="logo-texts">
-          <span class="logo-title">ONUR YILMAZLAR</span><br>
-          <span class="logo-sub">CAM SAN. LTD. ŞTİ.</span>
-        </span>
+        <span class="logo-title">Onur Yılmazlar Cam</span>
+        <span class="logo-sub">San. Ltd. Şti.</span>
       </a>
       <nav>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#iletisim">İletişim</a>
+        <ul>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#referanslar">Yorumlar</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
       </nav>
     </div>
   </header>
+
   <section class="hero">
     <div class="hero-slider">
-      <img src="hero1.jpg" alt="Kaliteli Cam Uygulaması" class="hero-img active">
-      <img src="hero2.jpg" alt="Modern Cam Dekorasyon" class="hero-img">
-      <img src="hero3.jpg" alt="Lüks Cam Tasarım" class="hero-img">
-      <img src="hero4.jpg" alt="Cam Tasarım" class="hero-img">
-      <img src="hero5.jpg" alt="Dış cephe" class="hero-img">
-      <div class="hero-overlay"></div>
+      <img src="hero1.jpg" alt="Hero Görsel 1" class="hero-img active">
+      <img src="hero2.jpg" alt="Hero Görsel 2" class="hero-img">
+      <img src="hero3.jpg" alt="Hero Görsel 3" class="hero-img">
     </div>
-    <div class="container hero-content">
-      <h1>Camda Modern Çözümler</h1>
-      <p>Onur Yılmazlar Cam San. Ltd. Şti. ile yenilikçi ve kaliteli cam uygulamaları</p>
+    <div class="hero-glass">
+      <h1 class="hero-title">Camda Ultra Modern Çözümler</h1>
+      <p class="hero-desc">Onur Yılmazlar Cam San. Ltd. Şti. ile yenilikçi, estetik ve fonksiyonel cam uygulamaları.</p>
       <a href="#iletisim" class="cta-btn">Teklif Al</a>
     </div>
   </section>
+
+  <section id="hakkimizda" class="about">
+    <div class="container">
+      <h2 class="section-title">Hakkımızda</h2>
+      <div class="about-glass">
+        <p>
+          Onur Yılmazlar Cam San. Ltd. Şti. olarak, yılların tecrübesiyle cam işleme, dekorasyon ve dış cephe uygulamalarında yenilikçi ve kaliteli çözümler sunuyoruz. Müşteri memnuniyetini ve güvenliğini ön planda tutarak, modern teknolojilerle estetik ve fonksiyonel projelere imza atıyoruz. Her projede titizlik, şeffaflık ve sürdürülebilirlik ilkelerimizden ödün vermeden hizmet veriyoruz.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <section id="hizmetler" class="services">
     <div class="container">
-      <h2>Hizmetlerimiz</h2>
+      <h2 class="section-title">Hizmetlerimiz</h2>
       <div class="service-cards">
         <div class="card">
           <img src="cnc-cam-isleme.jpg" alt="CNC Cam İşleme" class="service-img">
           <h3>CNC Cam İşleme</h3>
-          <div class="service-tooltip">Otomatik ve hassas cam kesim, delme ve şekillendirme işlemleriyle yüksek kalite ve hızlı üretim.</div>
+          <p class="service-desc">Otomatik ve hassas cam kesim, delme ve şekillendirme işlemleriyle yüksek kalite ve hızlı üretim.</p>
         </div>
         <div class="card">
           <img src="cam-dekorasyon.jpg" alt="Cam Dekorasyon" class="service-img">
           <h3>Cam Dekorasyon</h3>
-          <div class="service-tooltip">Estetik ve özgün cam dekorasyon çözümleriyle mekanlarınıza değer katıyoruz.</div>
+          <p class="service-desc">Estetik ve özgün cam dekorasyon çözümleriyle mekanlarınıza değer katıyoruz.</p>
         </div>
         <div class="card">
           <img src="dis-cephe.jpeg" alt="Dış Cephe Cam Kaplama" class="service-img">
           <h3>Dış Cephe Cam Kaplama</h3>
-          <div class="service-tooltip">Binalarınız için modern, dayanıklı ve enerji verimli dış cephe cam kaplama sistemleri.</div>
+          <p class="service-desc">Binalarınız için modern, dayanıklı ve enerji verimli dış cephe cam kaplama sistemleri.</p>
         </div>
         <div class="card">
           <img src="kumlama.jpeg" alt="Kumlama" class="service-img">
           <h3>Kumlama</h3>
-          <div class="service-tooltip">Cam yüzeylerde dekoratif ve gizlilik sağlayan kumlama işlemleri.</div>
+          <p class="service-desc">Cam yüzeylerde dekoratif ve gizlilik sağlayan kumlama işlemleri.</p>
         </div>
         <div class="card">
           <img src="ayna-dekorasyon.jpg" alt="Ayna Dekorasyon" class="service-img">
           <h3>Ayna Dekorasyon</h3>
-          <div class="service-tooltip">Mekanlarınıza derinlik ve şıklık katan özel ayna dekorasyon çözümleri.</div>
+          <p class="service-desc">Mekanlarınıza derinlik ve şıklık katan özel ayna dekorasyon çözümleri.</p>
         </div>
         <div class="card">
           <img src="pvc.jpg" alt="PVC" class="service-img">
           <h3>PVC</h3>
-          <div class="service-tooltip">Isı ve ses yalıtımı sağlayan, uzun ömürlü PVC doğrama ve pencere sistemleri.</div>
+          <p class="service-desc">Isı ve ses yalıtımı sağlayan, uzun ömürlü PVC doğrama ve pencere sistemleri.</p>
         </div>
         <div class="card">
           <img src="aluminyum.jpg" alt="Alüminyum" class="service-img">
           <h3>Alüminyum</h3>
-          <div class="service-tooltip">Modern ve dayanıklı alüminyum doğrama, kapı ve pencere çözümleri.</div>
+          <p class="service-desc">Modern ve dayanıklı alüminyum doğrama, kapı ve pencere çözümleri.</p>
         </div>
         <div class="card">
           <img src="dusakabin.jpg" alt="Duşakabin" class="service-img">
           <h3>Duşakabin</h3>
-          <div class="service-tooltip">Banyonuz için estetik, fonksiyonel ve uzun ömürlü duşakabin sistemleri.</div>
+          <p class="service-desc">Banyonuz için estetik, fonksiyonel ve uzun ömürlü duşakabin sistemleri.</p>
         </div>
       </div>
     </div>
   </section>
-  <section id="hakkimizda" class="about">
+
+  <section id="referanslar" class="testimonials">
     <div class="container">
-      <h2>Hakkımızda</h2>
-      <p>Onur Yılmazlar Cam, sektördeki tecrübesi ve uzman kadrosu ile cam işleme, dekorasyon ve dış cephe kaplama alanlarında profesyonel çözümler sunar. Müşteri memnuniyetini ve kaliteyi ön planda tutar.</p>
-    </div>
-  </section>
-  <section id="iletisim" class="contact-modern">
-    <div class="contact-modern-container">
-      <div class="contact-modern-info glass-card">
-        <h2>İletişim Bilgileri</h2>
-        <ul>
-          <li><strong>Adres:</strong> Çavuşoğlu, 3. Cd. 9. Sk., 44070 Yeşilyurt/Malatya</li>
-          <li><strong>Telefon:</strong> ...</li>
-          <li><strong>E-posta:</strong> ...</li>
-        </ul>
-        <div class="contact-modern-social">
-          <!-- Sosyal medya ikonları burada tekrar gösterilebilir -->
+      <h2 class="section-title">Müşteri Yorumları</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <p>"Çok kaliteli ve hızlı hizmet, kesinlikle tavsiye ederim!"</p>
+          <span>- Ayşe K.</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"Cam dekorasyonunda harikalar yarattılar, teşekkürler!"</p>
+          <span>- Mehmet T.</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"Dış cephe cam kaplama ile binamız çok modern görünüyor."</p>
+          <span>- Zeynep B.</span>
         </div>
       </div>
-      <div class="contact-modern-form glass-card">
-        <h2>Hızlı Mesaj Gönder</h2>
-        <form>
-          <input type="text" placeholder="Adınız" required>
-          <input type="email" placeholder="E-posta" required>
-          <textarea placeholder="Mesajınız" required></textarea>
-          <button type="submit">Gönder</button>
-        </form>
-      </div>
-    </div>
-    <div class="contact-modern-map">
-      <iframe src="https://www.google.com/maps?q=Çavuşoğlu,+3.+Cd.+9.+Sk.,+44070+Yeşilyurt/Malatya&output=embed" width="100%" height="260" style="border:0; border-radius:18px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
-  <footer>
+
+  <section id="galeri" class="gallery">
     <div class="container">
-      &copy; 2025 Onur Yılmazlar Cam San. Ltd. Şti.
-      <div style="margin-top: 8px; font-size: 1rem; color: #d4af37; opacity: 0.85; letter-spacing: 1px; font-weight: 500;">
-        <a href="https://github.com/erdncyz" target="_blank" class="mercury-link" style="color: #d4af37; text-decoration: none; opacity: 0.85; font-weight: 500;">☿ Made by Mercury Software</a>
+      <h2 class="section-title">Uygulama Galerisi</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/galeri1.jpg" alt="Cam Uygulaması 1" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeri2.jpg" alt="Cam Uygulaması 2" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeri3.jpg" alt="Cam Uygulaması 3" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeri4.jpg" alt="Cam Uygulaması 4" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeri5.jpg" alt="Cam Uygulaması 5" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeri6.jpg" alt="Cam Uygulaması 6" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeri7.jpg" alt="Cam Uygulaması 7" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeri8.jpg" alt="Cam Uygulaması 8" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
       </div>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/onuryilmazlarcam/?locale=zh_CN&hl=en" target="_blank" aria-label="Instagram">
-          <svg width="28" height="28" viewBox="0 0 448 512" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M224 202.66A53.34 53.34 0 1 0 277.34 256 53.38 53.38 0 0 0 224 202.66Zm124.71-41a54 54 0 0 0-30.36-30.36C293.19 120 256 118.13 224 118.13s-69.19 1.87-94.35 13.17a54 54 0 0 0-30.36 30.36C120 162.81 118.13 200 118.13 232s1.87 69.19 13.17 94.35a54 54 0 0 0 30.36 30.36C162.81 392 200 393.87 232 393.87s69.19-1.87 94.35-13.17a54 54 0 0 0 30.36-30.36C392 349.19 393.87 312 393.87 280s-1.87-69.19-13.17-94.35ZM224 338a82 82 0 1 1 82-82 82 82 0 0 1-82 82Zm85.4-148.6a19.2 19.2 0 1 1-19.2-19.2 19.2 19.2 0 0 1 19.2 19.2Z" fill="currentColor"/><circle cx="340.5" cy="107.5" r="13.5" fill="currentColor"/></svg>
+    </div>
+  </section>
+
+  <section id="sss" class="faq">
+    <div class="container">
+      <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+      <div class="faq-list">
+        <div class="faq-card">
+          <button class="faq-question">Cam baskı ne kadar dayanıklıdır?</button>
+          <div class="faq-answer">Dijital cam baskılar UV korumalı ve uzun ömürlüdür, solmaz ve kolay temizlenir.</div>
+        </div>
+        <div class="faq-card">
+          <button class="faq-question">Hangi şehirlerde hizmet veriyorsunuz?</button>
+          <div class="faq-answer">Başta Malatya olmak üzere tüm Türkiye'ye hizmet veriyoruz.</div>
+        </div>
+        <div class="faq-card">
+          <button class="faq-question">Özel ölçü ve tasarım yapılabilir mi?</button>
+          <div class="faq-answer">Evet, tüm projelerimizde özel ölçü ve tasarım imkanı sunuyoruz.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim" class="contact">
+    <div class="container">
+      <h2 class="section-title">İletişim</h2>
+      <div class="contact-flex">
+        <div class="contact-card">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Adres</h3>
+            <p>Malatya, Türkiye</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <h3>Telefon</h3>
+            <p>+90 555 555 55 55</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>E-posta</h3>
+            <p>info@onuryilmazlarcam.com</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <form class="contact-form">
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="E-posta" required>
+            <input type="tel" placeholder="Telefon" required>
+            <textarea placeholder="Mesajınız" required></textarea>
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.6725561521366!2d38.2954112!3d38.3565602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407636a73e88cdf3%3A0x623d41a244d82ee8!2sOnur%20Yilmazlar%20Cam%20San.%20Tic.%20Ltd.%20%C5%9Eti.!5e0!3m2!1str!2str!4v1749397299747!5m2!1str!2str" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="logo-link footer-logo">
+          <span class="logo-svg">
+            <svg width="40" height="40" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="32" height="32" rx="6" stroke="#ffd700" stroke-width="3.2" fill="rgba(255,255,255,0.08)"/>
+              <rect x="10" y="10" width="8" height="18" rx="2.5" fill="#fff"/>
+              <rect x="20" y="10" width="8" height="18" rx="2.5" fill="#fff"/>
+              <rect x="10" y="10" width="18" height="8" rx="2.5" fill="rgba(255,255,255,0.13)"/>
+            </svg>
+          </span>
+          <span class="logo-title">Onur Yılmazlar Cam</span>
+          <span class="logo-sub">San. Ltd. Şti.</span>
         </a>
-        <a href="#" target="_blank" aria-label="Facebook">
-          <svg width="28" height="28" viewBox="0 0 320 512" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0c-73.22 0-121.09 44.38-121.09 124.72v70.62H22.89V288h81.38v224h100.2V288z" fill="currentColor"/></svg>
-        </a>
-        <a href="#" target="_blank" aria-label="X">
-          <svg width="28" height="28" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716h-97.2l-67.8 94.6-67.8-94.6h-97.2l135.6 189.6-135.6 189.6h97.2l67.8-94.6 67.8 94.6h97.2l-135.6-189.6z" fill="currentColor"/></svg>
-        </a>
+        <div class="footer-links">
+          <a href="#anasayfa">Ana Sayfa</a>
+          <a href="#hakkimizda">Hakkımızda</a>
+          <a href="#hizmetlerimiz">Hizmetlerimiz</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#iletisim">İletişim</a>
+        </div>
+        <div class="footer-social social-icons">
+          <a href="https://instagram.com/onuryilmazlarcam" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Onur Yılmazlar Cam San. Ltd. Şti. Tüm hakları saklıdır.</p>
+        <a href="https://github.com/erdncyz" target="_blank" class="made-by">Made by Mercury Software</a>
       </div>
     </div>
   </footer>
-  <script>
-  let current = 0;
-  const images = document.querySelectorAll('.hero-img');
-  setInterval(() => {
-    images[current].classList.remove('active');
-    current = (current + 1) % images.length;
-    images[current].classList.add('active');
-  }, 4000);
-  </script>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html> 
