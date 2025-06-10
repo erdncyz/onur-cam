@@ -84,4 +84,22 @@ if (heroImages.length > 1) {
 // Sayfa açıldığında en üste kaydır
 window.addEventListener('load', function() {
   window.scrollTo(0, 0);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navList = document.querySelector('.nav-list');
+  if (navToggle && navList) {
+    navToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      navList.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+      if (navList.classList.contains('open') && !navList.contains(e.target) && !navToggle.contains(e.target)) {
+        navList.classList.remove('open');
+        navToggle.classList.remove('open');
+      }
+    });
+  }
 }); 
