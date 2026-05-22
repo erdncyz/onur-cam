@@ -738,22 +738,21 @@ textarea:focus {
   }
 
   .topbar-inner {
-    grid-template-columns: auto auto;
-    grid-template-areas:
-      "brand tools"
-      "nav nav";
-    row-gap: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.42rem;
     border-radius: 14px;
     padding: 0.62rem 0.68rem;
   }
 
   .brand {
-    grid-area: brand;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
   }
 
   .toolbar {
-    grid-area: tools;
-    justify-self: end;
+    margin-left: auto;
   }
 
   .chip-btn {
@@ -764,8 +763,9 @@ textarea:focus {
   }
 
   .nav {
-    grid-area: nav;
-    width: 100%;
+    width: auto;
+    position: relative;
+    margin-left: 0.1rem;
   }
 
   .nav-toggle {
@@ -774,14 +774,19 @@ textarea:focus {
 
   .nav-list {
     display: none;
-    width: 100%;
-    margin-top: 0.6rem;
+    width: min(280px, 86vw);
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.5rem);
     border-radius: 14px;
     padding: 0.45rem;
     background: var(--card-strong);
     border: 1px solid var(--line);
     flex-direction: column;
     align-items: stretch;
+    box-shadow: 0 14px 28px rgba(10, 18, 34, 0.2);
+    z-index: 60;
   }
 
   .nav-list.open {
@@ -803,14 +808,21 @@ textarea:focus {
 
   .hero {
     min-height: calc(100svh - 0.4rem);
-    margin-top: -4rem;
-    padding-top: 5.7rem;
+    margin-top: -2.9rem;
+    padding-top: 4.8rem;
+  }
+
+  .hero-shade {
+    background:
+      radial-gradient(circle at 52% 34%, rgba(255, 255, 255, 0.22) 0%, rgba(10, 18, 36, 0.28) 68%),
+      linear-gradient(120deg, rgba(9, 14, 28, 0.06), rgba(9, 14, 28, 0.3));
   }
 
   .hero-content {
     padding: 1.25rem;
     border-radius: 24px;
     width: min(96vw, 640px);
+    background: linear-gradient(135deg, rgba(17, 31, 58, 0.32), rgba(17, 31, 58, 0.2));
   }
 
   h1 {
@@ -887,8 +899,16 @@ textarea:focus {
 }
 
 @media (max-width: 460px) {
+  .hero {
+    margin-top: -2.3rem;
+    padding-top: 4.4rem;
+  }
+
   .brand strong {
-    font-size: 0.86rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .brand small {
